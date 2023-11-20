@@ -13,15 +13,12 @@ const img = {
 
 export function Profile() {
   let [user, setUser] = useState();
-  let [count, setCount] = useState(1);
   let [loading, setLoading] = useState(0);
 
   const { id } = useParams();
 
-
   useEffect(() => {
-    if (count === 1) {
-      setCount(count + 1);
+    setTimeout(() => {
       Get('https://dummy.restapiexample.com/api/v1/employee/' + id).then(data => {
         if (data && data.status === 'success')
           setUser(data.data);
@@ -38,9 +35,10 @@ export function Profile() {
           return <ErrorPageMsg></ErrorPageMsg>
         });
 
+    }, 1000);
+  }, [id]);
 
-    }
-  });
+
 
 
 
@@ -51,7 +49,7 @@ export function Profile() {
           {user ? (
             <div>
               <div className="card p-3">
-                <img src={profileImg} style={img} />
+                <img src={profileImg} style={img}  alt="profile_image"/>
                 <h3 className="mt-2"> {user.employee_name}</h3>
                 <p className="title">Software Developer</p>
                 <p>Harvard University</p>
