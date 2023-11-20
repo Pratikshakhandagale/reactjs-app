@@ -28,7 +28,7 @@ function EmployeeList(prop) {
 
                                 <div className="card-body">
                                     <i onClick={() => DeleteEmp(item.id)} className="fa fa-minus btn btn-danger btn-sm float-end"></i>
-                                    <div onClick={() => navigate("\profile/" + item.id)}>
+                                    <div onClick={() => navigate("profile/" + item.id)}>
                                         <img src={item.imageUrl} alt="profile_img" className="card-img-top w-50" />
                                         <h5 className="card-title mt-4">{item.firstName} {item.lastName}</h5>
                                         <p className="card-text">{item.email}</p>

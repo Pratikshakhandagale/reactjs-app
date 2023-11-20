@@ -20,15 +20,15 @@ export function Get(url) {
     return fetch(url)
         .then(response => {
             if (!response.ok) {
-                throw <ErrorPageMsg></ErrorPageMsg>
+                throw new Error(<ErrorPageMsg />);
+
             }
             return response.json();
         })
         .then(data => data)
         .catch(error => {
-            throw <ErrorPageMsg></ErrorPageMsg>
-            console.error('Error fetching data:', error);
-            throw error; // Rethrow the error for the next .catch() to handle
+            throw new Error(<ErrorPageMsg />);
+            
         });
     
 }

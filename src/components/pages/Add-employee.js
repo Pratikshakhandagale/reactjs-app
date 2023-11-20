@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Post, Get } from '../../service/data'
+import { Post } from '../../service/data'
 
 function AddEmployee() {
     // Create state variables to store form input values

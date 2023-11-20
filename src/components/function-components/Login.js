@@ -1,6 +1,4 @@
-import Employee from './Employee';
 import { useNavigate } from 'react-router-dom';
-
 
 function Login() {
     const navigate = useNavigate();

@@ -4,9 +4,9 @@ import EmptyMsg from '../primitive-components/EmptyMsg';
 
 function SearchBar(prop) {
   const [query, setQuery] = useState('');
-  const [items, setItems] = useState(prop.searchItems);
+  // const [items, setItems] = useState(prop.searchItems);
 
-  if (prop.searchItems.length != 0) {
+  if (prop.searchItems.length !== 0) {
     // Function to handle the search query
     const handleSearch = (event) => {
       setQuery(event.target.value);
