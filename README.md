@@ -1,3 +1,18 @@
+Assignment:
+
+To complete this assignment, I utilized a dummy API provided at https://dummy.restapiexample.com/.
+
+Here are the tasks accomplished:
+- Implemented a manual admin login feature with a default username and password.
+- After a successful login, the page automatically redirects to the Employee List page.
+- Created an admin dashboard where the admin can view a list of employees, access a header menu, and find a logout button.
+- Implemented a feature allowing the admin to search for employees by their name and email ID.
+- Provided functionality for the admin to delete an employee from the list.
+- Clicking on an employee card redirects the admin to the employee's profile page.
+- The admin to add skills 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
